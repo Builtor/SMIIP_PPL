@@ -1,0 +1,6 @@
+*.pyc
+misc.xml
+modules.xml
+vcs.xml
+workspace.xml
+profiles_settings.xml
