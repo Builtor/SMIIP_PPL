@@ -39,6 +39,7 @@ def ltp_tokenize2(words_set, sentence, useUNK=True, jiebaThreads=5):
 segmentor = Segmentor()
 def load_ltp_model(path):
     segmentor.load(path)
+    pass
 
 
 def ltp_tokenize(words_set, sentence, useUNK=True):
