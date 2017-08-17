@@ -36,7 +36,7 @@ if __name__ == '__main__':
             text_path = pre_path + str(i)
         # processing(text_path, out_path)
 
-        with open("htmltest.txt") as f:
+        with open("../htmltest.txt") as f:
             rfgen = f.xreadlines()
             for pyin in rfgen:
                 # 处理完标签后的数据，未分词，pyin是str类型，用decode utf8解码，可encode变回去str

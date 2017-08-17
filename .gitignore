@@ -4,3 +4,5 @@ modules.xml
 vcs.xml
 workspace.xml
 profiles_settings.xml
+.idea
+res_tokenize
