@@ -50,13 +50,13 @@ if __name__ == '__main__':
                 # buff = buff.replace('\n', '')
                 buff = buff.replace(' ', '').strip()
                 buff = data_filter.filter_pure_num(buff)
-                if len(buff) < 2:
+                if len(buff) < 10:
                     # print buff
                     continue
-                # todo:分词，将不同的分词方法保存在不同的路径下
-                ltp_res.write(at.ltp_tokenize(words_set, buff, True))
-                # nlpir_res.write(at.nlpir_tokenize(words_set, buff, True))
-                thulac_res.write(at.thulac_tokenize(words_set, buff, True))
-                jieba_res.write(at.jieba_tokenize2(words_set, buff, False))
+                thulac_res.write(buff)
+                # ltp_res.write(at.ltp_tokenize(words_set, buff, True))
+                # # nlpir_res.write(at.nlpir_tokenize(words_set, buff, True))
+                # thulac_res.write(at.thulac_tokenize(words_set, buff, True))
+                # jieba_res.write(at.jieba_tokenize2(words_set, buff, False))
         print 'done'
         break
