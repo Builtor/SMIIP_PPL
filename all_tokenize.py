@@ -91,10 +91,7 @@ def nlpir_tokenize(words_set, sentence, useUNK=True):
     allwords = pynlpir.segment(sentence, pos_tagging=False)
     if useUNK:
         for i, w in enumerate(allwords):
-            # w是数据集的每一句话？每一个词看起来比较像
             if w not in words_set:
-                # 如果词不在词典里，那就对每一个字都单独做判断
-                #以sep作为分隔符，将seq所有的元素合并成一个新的字符串
                 allwords[i] = ' '.join(map(lambda x: x if x in words_set else UNKSYMBOL, w))
     buff = u' '.join(allwords)
     buff = re.sub(ur' \n ', u'\n', buff)
