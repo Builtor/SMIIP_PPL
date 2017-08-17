@@ -6,3 +6,7 @@ workspace.xml
 profiles_settings.xml
 .idea
 res_tokenize
+cws.model
+local_test
+res_tokenize
+res_tokenize_mul
