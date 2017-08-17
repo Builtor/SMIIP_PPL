@@ -23,10 +23,16 @@ def nlpir_tk():
     nlpir_res = open('res_tokenize/nlpir_res_v1.txt', 'w')
 
 if __name__ == '__main__':
+
     jieba_res = open('res_tokenize/jieba_res_v1.txt', 'w')
+
+    at.load_ltp_model('../cws.model')
     ltp_res = open('res_tokenize/ltp_res_v1.txt', 'w')
+
     thulac_res = open('res_tokenize/thulac_res_v1.txt', 'w')
+
     nlpir_res = open('res_tokenize/nlpir_res_v1.txt', 'w')
+
     for i in range(1, 32):
         pre_path = '/home/intern2017/huangyj/data/baike_data/part-r-000'
 
